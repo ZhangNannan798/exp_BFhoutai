@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/public.css" type="text/css"> -->
+    <link rel="icon" href="images/xiaotubiao.ico">
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.3.js"></script>
+    <title>首页</title>
+</head>
+
+<body>
+    <!-- 顶部top -->
+    <div class="top">
+        <div class="topcontent main">
+            <a href="#"><img src="images/logo.jpg">优视影院</a>
+            <ul class="one">
+                <li class="first">
+                    <a href="/index1">首页</a>
+                </li>
+                <li>
+                    <a href="/movie">电影</a>
+                </li>
+                <li>
+                    <a href="https://ent.sina.com.cn/" target="_blank">新浪资讯</a>
+                </li>
+            </ul>
+            <ul class="two">
+                <li>
+                    <a href="/login">登录</a>
+                </li>
+                <li>
+                    <a href="/login">注册</a>
+                </li>
+                <li>
+                    <a href="#">VIP特权</a>
+                </li>
+                <li class="position">
+                    <a href="#">二维码</a>
+                    <div class="erweima"><img src="images/erweima.jpg">扫描二维码或微信关注优视影院即可领取影视资源</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="lunbo">
+        <div class="bd main">
+            <ul class="picList">
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/1.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/2.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/3.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/4.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/5.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/6.jpg" /></a></div>
+                </li>
+                <li>
+                    <div class="pic"><a href="/play" target="_blank"><img src="images/9.jpg" /></a></div>
+                </li>
+
+            </ul>
+        </div>
+        <script type="text/javascript">
+            jQuery(".lunbo").slide({ mainCell: ".bd ul", autoPage: true, effect: "left", autoPlay: true, vis: 4, trigger: "click" });
+        </script>
+    </div>
+
+    <!-- 广告ad -->
+    <div class="ad">
+        <div class="adcontent main">
+            <div class="fl huali"><span>VIP</span>升级特惠，价格<span>低</span>，特权<span>多</span>，只等<span>你</span>来</div>
+            <div class="liji fl"><a href="/login">立即开通</a></div>
+        </div>
+    </div>
+    <!-- 热播推荐 -->
+    <div class="strong">
+        <div class="listcontent main clearfix">
+            <div class="title">热播推荐<a href="#" target="_blank" class="fr">更多&nbsp;>></a></div>
+            <ul id="recommend">
+                <% for(var i= 0;i<list.length;i++){%>
+                <li>
+                    <a href="/play"><img src="/<%=list[i].url%>" />
+                    <span class="free"> 
+                        <%var type = ''
+                        if(list[i].type==1){
+                          type = '会员免费'
+                        }else if(list[i].type==2){
+                          type = 'VIP限免'
+                        }
+                        else{
+                            type = '不给看'  
+                        }%>
+                        <%=type%>
+                    </span>
+                    <em>高清</em>
+                    </a>
+                    <div class="jieshao">
+                        <a href="#" class="listTit"><%=list[i].title%></a>
+                        <p><%=list[i].message%></p>
+                        <span><%=list[i].grade%></span>
+                    </div>
+                </li>
+                <%}%>
+                <!-- <li>
+                    <a href="/play"><img src="images/1.jpg" />
+                    <span class="free"></span>
+                    <em>高清</em>
+                    </a>
+                    <div class="jieshao">
+                        <a href="#" class="listTit">斗罗大陆:龙王传说</a>
+                        <p>始终坚持一个信念</p>
+                        <span>9.5</span>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+    <!-- 热映大片 -->
+    <div class="hot">
+        <div class="listcontent main clearfix">
+            <div class="title">热映大片 <a href="#" target="_blank" class="fr">更多&nbsp;>></a></div>
+            <ul id='hotcontent'>
+                <% for(var i= 0;i<list.length;i++){%>
+                    <li>
+                        <a href="/play"><img src="/<%=list[i].url%>" />
+                        <span class="free"> 
+                            <%var type = ''
+                            if(list[i].type==1){
+                              type = '会员免费'
+                            }else if(list[i].type==2){
+                              type = 'VIP限免'
+                            }
+                            else{
+                                type = '不给看'  
+                            }%>
+                            <%=type%>
+                        </span>
+                        <em>高清</em>
+                        </a>
+                        <div class="jieshao">
+                            <a href="#" class="listTit"><%=list[i].title%></a>
+                            <p><%=list[i].message%></p>
+                            <span><%=list[i].grade%></span>
+                        </div>
+                    </li>
+                    <%}%>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部信息 -->
+    <div class="bottom">
+        <div class="bottomcontent main">
+            <div class="contentup">
+               <h3>友情链接</h3>
+               <ul>
+                   <li><a href="https://www.iqiyi.com/home2019.html">爱奇艺</a></li>
+                   <li><a href="https://v.qq.com/?ptag=qqbsc&ADTAG=search-zd">腾讯视频</a></li>
+                   <li><a href="https://www.59kan.net/piaohuadianyingwang.html">飘花电影网</a></li>
+                   <li><a href="https://www.59kan.net/jiuzhou2019tv.html">九州电影网</a></li>
+                   <li><a href="https://www.59kan.net/yy4480.html">yy4480影院</a></li>
+                   <li><a href="https://www.ieshop.net/">站长源码</a></li>
+               </ul>
+            </div>
+            <div class="contentdown">
+                <p class="p1">本站只提供WEB页面服务，本站不存储、不制作任何视频，不承担任何由于内容的合法性及健康性所引起的争议和法律责任。</p>
+                <p class="p2">若本站收录内容侵犯了您的权益，请附说明联系邮箱，本站将第一时间处理。</p>
+                <a href="#" target="_blank" class="one">京ICP证0000000号</a>
+                <a href="#" target="_blank" class="two">京网文【2020】0001-221号</a>
+                <a href="#" target="_blank" class="three">互联网药品信息服务资格证书（京）-非经营性-2020-0012</a>
+                <a href="#" target="_blank" class="four">广播电视节目制作经营许可证：（京）字第01166号</a>
+                <a href="#" target="_blank" class="five">京公网安备：111111111</a>
+                <a href="#" target="_blank">信息网络传播视听许可证号：22222222</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

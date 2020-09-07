@@ -1,0 +1,152 @@
+.wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+.tabNav{
+    width: 100%;
+    background: #f3f3f3;
+    padding-bottom: 28px;
+    
+    .tnMain{
+        .wrap;
+        width: 1076px;
+        background: #ffffff;
+        padding:18px 12px 28px;
+        
+       border-bottom: 1px solid #dedede;
+       .tb_list{
+            height: 28px;
+            margin-bottom: 30px;
+            li{
+                line-height: 28px;
+                float: left;
+                padding:0 20px;
+                cursor: pointer;
+                &:hover{
+                    color:#0b68c8 
+                }}
+                .active{
+                     background: #0b68c8;
+                    color: #fff;
+                }
+              
+            
+        }
+        .m_list{
+            height: 40px;
+            background: #f8f8f8;
+            border:1px solid #dedede; 
+            margin-bottom: 30px;
+            li{
+                width: 130px;
+                height: 40px;
+                float: left;
+                box-sizing: border-box;
+                line-height: 40px;
+                text-align: center; 
+                color:#0b68c8;
+                cursor: pointer; 
+                font-size: 14px;
+               
+            }
+            .active{
+                color: #333;
+                height: 42px;
+                background: #fff;
+                border-top: 3px solid #0b68c8;
+        
+            }
+            
+        }
+        .pk_list{
+            li{
+                float: left;
+                margin-right: 12px;
+                position: relative;
+                margin-bottom: 42px;
+                a{
+                    display: block;
+                   position: relative;
+                    p{
+                        font-size: 14px;
+     
+                         &:hover{
+                        color:#0963c4;
+                    }
+                    }
+                    &>div{
+                        width: 72px;
+                        height: 18px;
+                        background: url(../images/vip-tips.png) -110px 0px;
+                        position: absolute;
+                        left:10px;
+                        top:9px;
+                     }
+                     &>.free{
+                        background: url(../images/vip-tips.png) 0px -20px;
+                    }
+                    &>.count{
+                        background: url(../images/vip-tips.png) 0px 0px;
+                    }
+                     &>span{
+                         display: block;
+                         width: 28px;
+                         height: 18px;
+                         background: #333;
+                         position: absolute;
+                         top: 262px;
+                         right: 8px;
+                         color: white;
+                         text-align: center; 
+                         .span1{
+                             background: #333;
+                             opacity: 0.5; 
+                         }
+                     }   
+                   
+                    img{
+                    width: 205px;
+                    height: 288px;
+     
+                } 
+              }      
+                
+     
+                &>div{
+                    width: 26px;
+                    height: 18px;
+                    display: inline-block;
+                    color:#fd6600;
+                    position: absolute;
+                    right:0;
+                    bottom:10px;
+                    font-style: italic;
+                    span{
+                        font-size: 18px;
+                       
+                    }
+                }     
+                &:nth-child(5n){
+                    margin-right: 0;
+                }
+                &>p{
+                    color: #999999;
+                }
+                   
+            }    
+        }
+    }
+}
+
+#top{
+    width: 52px;
+    height: 52px;
+    background: url(../images/icon_neww.png);
+    position: fixed;
+    right:0;
+    bottom:20px;
+    // display: none;
+    &:hover{
+        background: url(../images/icon_neww.png)-52px 0 ;
+    }
+}

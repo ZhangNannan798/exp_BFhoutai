@@ -1,0 +1,171 @@
+.fl{float:left;}
+.fr{float:right;}
+.main{min-width:1100px;margin:0 auto;}
+/* 顶部top */
+.top{
+    background:linear-gradient(#352e2e,#4b4747,#625f5f);
+     min-width:1100px;
+}
+.top .topcontent{
+    width:1100px;
+    height:64px;
+}
+.top .topcontent>a{
+    display:block;
+    width:191px;
+    height:40px;
+    float:left;
+    color:#fff;
+    font:bold 24px/40px "微软雅黑";
+    margin:12px 0 12px 18px;
+}
+.top .topcontent>a img{
+    width:40px;
+    height:40px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.top .topcontent .one{  
+    height:64px;
+    float:left;
+    margin-left:140px;
+}
+.top .topcontent .one li{
+    padding:13px 20px;
+    height:38px;
+    float:left;
+}
+.first {
+    background:#4aad95;
+}
+.top .topcontent .one .first a{
+    color:#fff;
+}
+.top .topcontent .one li:hover a{
+    color:#fff;
+}
+.top .topcontent .one li:hover{
+    background:#4aad95;
+}
+.top .topcontent .one li a{
+    text-align:center;
+    font:18px/38px "微软雅黑";
+    font-weight:bold;
+    display:block;
+    color:#fff;
+}
+.top .topcontent .two{
+    color:#686868;
+    font:bold 16px/30px '微软雅黑';
+    margin:17px 7px;
+    float:right;
+}
+.top .topcontent .two li{
+     float:left;
+}
+.top .topcontent .two li a{
+    text-align:center;
+    display:block;
+    height:30px;
+    margin:0px 15px;
+    text-decoration: none;
+    color:#fff;
+}
+.top .topcontent .two li a:hover{
+    color:#48cfae;
+}
+.top .topcontent .two .position{
+    position: relative;
+} 
+.top .topcontent .two .position .erweima{
+    z-index:1;
+    width:140px;
+    height:230px;
+    display:none;
+    background:#fff;
+    color:#000;
+    font:12px/26px '微软雅黑';
+    padding:20px 20px 0 20px;
+    position: absolute;
+    left:-40px;
+    top:35px;
+} 
+.top .topcontent .two .position:hover .erweima{
+    display:block;
+}
+.top .topcontent .two .position .erweima img{
+    width:140px;
+    height:140px;
+} 
+
+
+/* 底部信息 */
+/* 上面的 */
+.bottom{
+    background:#f3f3f3;
+    width: 100%;
+    min-width: 1100px;
+}
+.bottom .bottomcontent .contentup{
+    background:#f3f3f3;
+    width: 1100px;
+    /* height: 104px; */
+    border-top: 3px solid #dedede;
+    border-bottom: 3px solid #dedede;
+    padding: 14px 0 70px;
+}
+.bottom .bottomcontent .contentup h3{
+   font-size:20px;
+   color:#333;
+}
+.bottom .bottomcontent .contentup li{
+    padding:10px 30px;
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+   float:left;
+}
+
+/* 下面的 */
+.bottom .bottomcontent .contentdown{
+    width: 1100px;
+    text-align: center;
+    height:161px;
+    font-size:12px;
+    line-height:26px;
+    background:#f3f3f3;
+}
+.bottom .bottomcontent .contentdown .p1{
+    margin-top: 60px;
+    color: #999;
+}
+.bottom .bottomcontent .contentdown .p2{
+    color: #999;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.bottom .bottomcontent .contentdown a{
+    display: block;
+    color: #999;
+    float:left;
+}
+
+.bottom .bottomcontent .contentdown a:hover{
+   text-decoration: under;
+}
+.bottom .bottomcontent .contentdown .one{
+   margin-right:10px;
+   margin-left:136px;
+}
+.bottom .bottomcontent .contentdown .two{
+   margin-right:10px;
+}
+.bottom .bottomcontent .contentdown .three{
+   margin-right:10px;
+}
+.bottom .bottomcontent .contentdown .four{
+   margin-right:10px;
+}
+.bottom .bottomcontent .contentdown .five{
+   margin-left:359px;
+}

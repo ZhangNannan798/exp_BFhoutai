@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/reset1.css">
+    <link rel="stylesheet" href="/css/admin_index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h3>优视影院</h3>
+        <span>退出</span>
+        <button class="btn">退出登录</button>
+    </div>
+    <div class="main">
+        <div class="left" style="border-right: 3px solid #ccc">
+            <!-- 1 -->
+            <p class="block">影片管理</p>
+            <ul>
+                <li><a href="/admin/move">影片总列表</a></li>
+            </ul>
+            <!-- 2 -->
+            <p class="block">专题管理</p>
+            <ul>
+                <li><a href="/admin/ztlist">热播推荐</a></li>
+                <li><a href="/admin/ztlist">热映大片</a></li>
+            </ul>
+            <!-- 3 -->
+           <!--  <p class="block">通知管理</p>
+            <ul>
+                <li><a href="#">通知内容</a></li>
+            </ul> -->
+            <!-- 4 -->
+            <p class="block">会员管理</p>
+            <ul>
+                <li><a href="/admin/hylist">会员列表</a></li>
+            </ul>
+            <!-- 5 -->
+            <p class="block">管理员管理</p>
+            <ul>
+                <li><a href="/admin/glylist">管理员列表</a></li>
+            </ul>
+        </div>
+        <div class="right " style="border-left: none">
+            <div class="top">
+                <h3>优视影院后台管理系统</h3>
+                <ol class="breadcrumb">
+                    <li><a href="#">主页</a></li>
+                </ol>
+            </div>
+            <div class="down">
+                <div class="mes res">
+                    <p>欢迎加入，会员有您更精彩!</p>
+                    <span>X</span>
+                </div>
+                <div class="mes see">
+                    <p>观影</p>
+                </div>
+                <div class="row">
+                    <img src="/images/zhexian.jpg" class="indeximg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script>
+        var p = document.getElementsByClassName('left')[0].getElementsByTagName('p');
+        var ul = document.getElementsByClassName('left')[0].getElementsByTagName('ul');
+        for (var i = 0; i < p.length; i++) {
+            p[i].index = i;
+            p[i].onclick = function () {
+                for (var j = 0; j < p.length; j++) {
+                    ul[j].style.display = 'none';
+                }
+                ul[this.index].style.display = 'block';
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            var timer = null;
+            $('.mes span').click(function () {
+                $('.res').hide();
+            });
+            $('.header span').mouseover(function () {
+                clearTimeout(timer)
+                $('.btn').show();
+            })
+            $('.header span').mouseout(function () {
+                timer = setTimeout(function () {
+                    $('.btn').hide();
+                }, 3000)
+
+            })
+            $('.btn').mouseover(function () {
+                clearTimeout(timer);
+                $('.btn').mousemove(function () {
+                    $(this).show();
+                })
+            })
+            $('.btn').mouseout(function () {
+                $(this).hide();
+            })
+            $('.header .btn').click(function () {
+                $.ajax({
+                    url: 'http://localhost:4001/admin/quit',
+                    success: function () {
+                        window.location.reload()
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

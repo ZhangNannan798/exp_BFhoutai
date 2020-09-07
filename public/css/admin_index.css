@@ -1,0 +1,205 @@
+.header {
+  height: 50px;
+  background: #24272e;
+  padding-left: 30px;
+  position: relative;
+}
+.header h3 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+}
+.header span {
+  position: absolute;
+  right: 45px;
+  top: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.header button {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.header .btn {
+  background:#24272e;
+  color: #fff;
+  display: none;
+}
+.main .left {
+  width: 320px;
+  height: 600px;
+  background:#2b2f38;
+  float: left;
+  text-align: center;
+}
+.main .left p {
+  display: block;
+  height: 50px;
+  font-size:18px;
+  line-height: 50px;
+  color:#fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.main .left p:hover{
+  background: #3e8f86;
+}
+.main .left ul {
+  display: none;
+ 
+}
+.main .left ul li {
+  text-align: center;
+  height: 38px;
+  background:#484c57;
+  line-height: 38px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.main .left ul li a {
+  text-decoration:none;
+  color: #fff;
+  font-size: 14px;
+}
+.main .left ul li a:hover{
+  color: #3e8f86;
+}
+.main .right {
+  float: left;
+  width: 1126px;
+   border-left: 3px solid #ccc;
+}
+.main .right .top {
+  text-indent: 22px;
+  height: 95px;
+  background: #ececec;
+}
+.main .right .top h3 {
+  font-size: 20px;
+  line-height: 64px;
+  border-bottom: 1px solid #ccc;
+}
+.main .right .down {
+  padding-left: 22px;
+}
+ .main .right .down .mes {
+  height: 34px;
+  border: 1px solid #3e8f86;
+  margin-top: 18px;
+  background: #c1ebe1;
+  position: relative;
+}
+.main .right .down .mes p {
+  text-indent: 12px;
+  line-height: 34px;
+}
+.main .right .down .mes span {
+  position: absolute;
+  right: 22px;
+  top: 9px;
+  cursor: pointer;
+}
+.main .right .down .see {
+  background: #e5e5e5;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.main .right .down .row .indeximg{
+  width:1102px;
+  margin-left:15px;
+}
+ .main .right .down nav {
+  text-align: center;
+}
+.main .right .down nav ul {
+  margin: 20px auto;
+}
+.main .right .down nav ul li a {
+  margin-right: 10px;
+}
+.main .right .down nav ul p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+}
+.main .right .down .form h4 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.main .right .down .form .sure {
+  margin-top:20px;
+  background: #fff;
+  text-align: center;
+}
+.main .right .down .form input,
+.main .right .down .form textarea,
+.main .right .down .form select {
+  width: 100%;
+  outline: none;
+}
+.main .right .down .form textarea {
+  height: 60px;
+}
+.main .right .down .form select {
+  background: #fff;
+}
+.main .right .down .form label {
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+.main .right .down .form #file {
+  display: none;
+}
+.main .right .down .form #tupian {
+  width: 940px;
+}
+.main .right .down .pas {
+  padding: 10px 20px;
+}  
+.ss {
+  border: none;
+  text-align: center;
+}
+.ss span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #999999;
+}
+.ss h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+td img{
+  width: 50px;
+  height: auto;
+}
+.none{
+  display: none;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  left:50%;
+  top:50%;
+  margin-top: -250px;
+  margin-left: -150px;
+  z-index: 999;
+}
+
+.gray{
+  display: none;
+  width: 100%;;
+  height: 100%;
+  opacity: 0.7;
+  background: #ccc;
+  position: fixed;
+  left: 0;
+   top:0;
+}
+.table .tbody tr td{
+  vertical-align: center!important;
+}

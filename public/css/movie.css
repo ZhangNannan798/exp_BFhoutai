@@ -1,0 +1,159 @@
+.w{margin:0 auto;}
+.strong{
+    width:100%;
+    background:#f3f3f3;
+    padding-bottom:43px;
+}
+.strong .title{
+	font-size:26px;
+	color:#333;
+	margin-bottom:30px;
+	padding-top:30px;
+}
+.listcontent{width:1100px}
+.listcontent>img{
+    margin:30px 900px 15px 2px;
+}
+.listcontent>a{
+    display:block;
+    font:12px/12px "宋体";
+    color:#000;
+    float:right;
+    margin-top:40px;
+}
+.listcontent ul{
+    /* overflow: hidden; */
+    width:1118px;
+}
+.listcontent ul li{
+    width:205px;
+    float:left;
+    margin-right:18px;
+    margin-bottom:25px;
+}
+.listcontent ul li img{
+    width:205px;
+    height:287px;
+}
+.listcontent a{
+    position: relative;
+    display:block;
+}
+.listcontent a span{
+    position: absolute;
+    width:75px;
+    height:18px;
+    background-image:url(../images/lunbobottom.png);
+    background-position: 0 -20px;
+    left:10px;
+    top:7px;
+}
+.listcontent a span.free{
+    background-position:-110px 0;
+}
+.listcontent a span.discount{
+    background-position: 0 0;
+    width:100px;
+}
+.listcontent a em{
+    background:black;
+    color:#fff;
+    position: absolute;
+    right:7px;
+    bottom:10px;
+    padding:0 3px;
+}
+.listTit{
+    font-size:14px;
+    line-height:20px;
+    color:#000;
+}
+.listcontent p{
+    color:#999;
+}
+.jieshao{
+    padding-right:30px;
+    position: relative;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+.jieshao a{
+    margin-bottom:5px;
+}
+.jieshao span{
+    position: absolute;
+    right:5px;
+    top:5px;
+    font-size:20px;
+    line-height:30px;
+    font-family: Georgia;
+    color:#f60;
+}
+.jieshao span i{
+    font-size:16px;
+}
+.slidecontent{width:100%; background:#f3f3f3;border-top:1px solid #ccc;}
+.slideTxtBox{ width:1100px;text-align:left; padding-top:10px; }
+.slideTxtBox .hd{ font-size:20px;height:50px; line-height:50px;padding:0 10px 0 20px;   border-bottom:1px solid #ddd;  position:relative; }
+.slideTxtBox .hd ul{ float:left;  position:absolute; left:0px; top:-1px; height:50px;   }
+.slideTxtBox .hd ul li{ float:left; padding:0 25px; cursor:pointer;  }
+.slideTxtBox .hd ul li.on{ height:50px;  background:#625f5f;color:#fff; border-bottom:2px solid #fff; }
+
+.bd>img{
+    margin:30px 900px 15px 2px;
+}
+.bd>a{
+    display:block;
+    font:12px/12px "宋体";
+    color:#000;
+    float:right;
+    margin-top:40px;
+}
+.bd ul{
+    /* overflow: hidden; */
+    width:1118px;
+}
+.bd ul li{
+    width:205px;
+    float:left;
+    margin-right:18px;
+    margin-bottom:25px;
+    margin-top:25px;
+}
+.bd ul li img{
+    width:205px;
+    height:287px;
+}
+.bd a{
+    position: relative;
+    display:block;
+}
+.bd a span{
+    position: absolute;
+    width:75px;
+    height:18px;
+    background-image:url(../images/lunbobottom.png);
+    background-position: 0 -20px;
+    left:10px;
+    top:7px;
+}
+.bd a span.free{
+    background-position:-110px 0;
+}
+.bd a span.discount{
+    background-position: 0 0;
+    width:100px;
+}
+.bd a em{
+    background:black;
+    color:#fff;
+    position: absolute;
+    right:7px;
+    bottom:10px;
+    padding:0 3px;
+}
+.bd p{
+    color:#999;
+}
+
+

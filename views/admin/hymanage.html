@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admin_index.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/reset1.css">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h3>优视影院</h3>
+        <span>root</span>
+        <button class="btn" onclick="leave()">退出登录</button>
+    </div>
+    <div class="main">
+        <div class="left">
+            <!-- 1 -->
+            <p class="block">影片管理</p>
+            <ul>
+                <li><a href="/admin/move">影片总列表</a></li>
+            </ul>
+            <!-- 2 -->
+            <p class="block">专题管理</p>
+            <ul>
+                <li><a href="/admin/ztlist">热播推荐</a></li>
+                <li><a href="/admin/ztlist">热映大片</a></li>
+            </ul>
+            <!-- 3 -->
+       <!--      <p class="block">通知管理</p>
+            <ul>
+                <li><a href="#">通知内容</a></li>
+            </ul> -->
+            <!-- 4 -->
+            <p class="block">会员管理</p>
+            <ul>
+                <li><a href="/admin/hylist">会员列表</a></li>
+            </ul>
+            <!-- 5 -->
+            <p class="block">管理员管理</p>
+            <ul>
+                <li><a href="/admin/glylist">管理员列表</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top ">
+                <h3>影片列表</h3>
+                <ol class="breadcrumb">
+                    <li><a href="/admin">主页</a></li>
+                    <li><a href="#">会员列表</a></li>
+                </ol>
+            </div>
+            <div class="down block">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading"><a href="/admin/hyedit"><button>+新增会员</button></a></div>
+
+                    <!-- Table -->
+                    <table class="table" style="vertical-align: center;">
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>简介</th>
+                            <th>类别</th>
+                            <th>头像</th>
+                            <th>联系方式</th>
+                            <th>加入时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <tbody class="tbody">
+                            <% for(var i= 0;i<list.length;i++){%>
+                            <tr>
+                                <td><%=i+1%></td>
+                                <td><%=list[i].title%></td>
+                                <td><%=list[i].message%></td>
+                                <td>
+
+                                    <%var type = ''
+                                    if(list[i].type==1){
+                                      type = '会员免费'
+                                    }else if(list[i].type==2){
+                                      type = 'VIP限免'
+                                    }
+                                    else{
+                                        type = '没有权限'  
+                                    }%>
+                                    <%=type%>
+                                </td>
+                                <td><img src="/<%=list[i].url%>" alt="">
+                                </td>
+                                <td><%=list[i].txt%></td>
+                                <td><%=list[i].grade%></td>
+                                <td><button class="edit" value="<%=list[i]._id%>">编辑</button>
+                                    <button class="del" value="<%=list[i]._id%>">删除</button></td>
+                            </tr>
+                            <%}%></tbody>
+                       
+                       
+                    </table>
+
+                </div>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">首页</span></a>
+                        </li>
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">上一页</span></a>
+                        </li>
+                        <li><a href="#">尾页<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">下一页<span class="sr-only">(current)</span></a></li>
+                        <li>
+                            <p>共<span>0</span>页</p>
+                            <p>共<span>0</span>条记录</p>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            
+            <div class="panel panel-default pas none">
+                <!-- Default panel contents -->
+
+                <div class="form ">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                      
+                            <h4>姓名</h4>
+                            <input type="text" name="title">
+                            <h4>简介</h4>
+                            <textarea name="message" id=""></textarea>
+                            <h4>联系方式</h4>
+                            <input type="text" name="txt" id="">
+                           <!--  <select name="txt" id="">
+                                <option value="手机号"></option>
+                            </select> -->
+                            <h4>类型</h4>
+                            <select name="type" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <h4>加入时间</h4>
+                            <input type="text"  name="grade" id="">
+                            <h4>头像</h4>
+                            <input type="file" id="" name="url">
+                            <input type="text" id="" name="id" class="id" value="">
+                            <div class="panel-heading sure"><button type="submit">确认修改</button><button type="button">取消修改</button></div>
+     
+                    </form>
+                </div>
+            </div>
+        <div class='gray'></div>    
+           </div>
+        </div>
+    </div>
+    
+  
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script>
+        var p = document.getElementsByClassName('left')[0].getElementsByTagName('p');
+        var ul = document.getElementsByClassName('left')[0].getElementsByTagName('ul');
+        for (var i = 0; i < p.length; i++) {
+            p[i].index = i;
+            p[i].onclick = function () {
+                for (var j = 0; j < p.length; j++) {
+                    ul[j].style.display = 'none';
+                }
+                ul[this.index].style.display = 'block';
+            }
+        }
+    </script>
+        <script>
+            $(function () {
+                var timer = null;
+                $('.mes span').click(function () {
+                    $('.res').hide();
+                });
+                $('.header span').mouseover(function () {
+                    clearTimeout(timer)
+                    $('.btn').show();
+                })
+                $('.header span').mouseout(function () {
+                    timer = setTimeout(function () {
+                        $('.btn').hide();
+                    }, 3000)
+
+                })
+                $('.btn').mouseover(function () {
+                    clearTimeout(timer);
+                    $('.btn').mousemove(function () {
+                        $(this).show();
+                    })
+                })
+                $('.btn').mouseout(function () {
+                    $(this).hide();
+                })
+                $('table').on('click', '.del', function () {
+                    var id = $(this).val();
+                    // console.log(id)
+                    $.ajax({
+                        url: 'http://localhost:4001/admin/hylist/del',
+                        data: {
+                            id
+                        },
+                        success: function (res) {
+                            window.location.reload();
+                        }
+                    })
+                })
+                $('.id').hide();
+
+                $('table').on('click', '.edit', function () {
+                    var title = $(this).parent().siblings().eq(1).html();
+                    var message = $(this).parent().siblings().eq(2).html();
+                    var grade = $(this).parent().siblings().eq(6).html();
+                    var txt = $(this).parent().siblings().eq(5).html();
+                    $('.none input').eq(0).val(title);
+                    $('.none textarea').eq(0).val(message);
+                    $('.none input').eq(1).val(txt);
+                    $('.none input').eq(2).val(grade);
+                    $('.none').show();
+                    $('.gray').show()
+                    var _id = $(this).val();
+                    $('.id').val(_id)
+                    // console.log(_id, $('.id').val())
+                })
+                $('.sure button').eq(1).css('marginLeft', '20px')
+                $('.sure button').eq(1).click(function () {
+                    window.location.reload()
+                })
+                $('.header .btn').click(function () {
+                    $.ajax({
+                        url: 'http://localhost:4001/admin/quit',
+                        success: function () {
+                            window.location.reload()
+                        }
+                    })
+                })
+
+            })
+            function leave() {
+                window.location.href = '/login'
+            }
+        </script>
+</body>
+
+</html>

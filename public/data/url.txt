@@ -1,0 +1,33 @@
+[
+    {
+        bigImg:'images/lunbo1.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo01.jpg',
+    },
+    {
+       bigImg:'images/lunbo2.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo02.jpg',
+    },
+     {
+       bigImg:'images/lunbo3.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo03.jpg',
+    },
+     {
+       bigImg:'images/lunbo4.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo04.jpg',
+    }, 
+     {
+       bigImg:'images/lunbo5.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo05.jpg',
+    },
+     {
+       bigImg:'images/lunbo6.jpg',
+        url:'http://www.baofeng.com/play/229/play-820729.html',
+        smallImg:'images/lunbo06.jpg',
+    },   
+    
+]

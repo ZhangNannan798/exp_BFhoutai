@@ -1,0 +1,427 @@
+.main{
+    width:1000px;
+    min-width:1000px;
+    margin:0 auto;
+} 
+body{
+    background:#f9f9f9;
+}
+/* 顶部导航栏 */
+.top{
+    height:89px;
+    background:#f9f9f9;
+    color:#000;
+    font:bold 34px/89px "微软雅黑";
+}
+.top img{
+    width:65px;
+    height:65px;
+    vertical-align: middle;
+    padding-right:10px;
+}
+/* 主体 */
+.content{
+    width:100%;
+    height:542px;
+    background:#c1ebe1;
+}
+.content .contentmain{
+    width:1000px;
+    height:489px;
+    background:#c1ebe1 ;
+    padding-top:53px;
+}
+.content .contentmain .right{
+    padding-left:24px;
+    width:308px;
+    background:#fff;
+    padding-top:22px;
+    padding-bottom:47px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,.3);
+    margin:0 auto;
+} 
+.content .contentmain .right1{
+    height:20px;
+    color:#48cfae;
+    font:600 16px "微软雅黑";
+    line-height:20px;
+    padding-bottom:20px;
+}
+/* 账号密码登录 */
+.content .contentmain .right .right2 .shuru1 input{
+    width:252px;
+    height:30px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+    color:#333;
+    font:12px '微软雅黑';
+}
+.info1 {
+    line-height: 14px;
+    font-size: 14px;
+    color: red;
+    height: 14px;
+  }
+.content .contentmain .right .right2 .shuru1 .user{
+    background:url(../images/user.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+}
+.content .contentmain .right .right2 .shuru1 .psw{
+    background:url(../images/pw.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+}
+/* 手机验证码登录 */
+.content .contentmain .right .right3 .shuru2 input{
+    margin-bottom:10px;
+    color:#333;
+    font:12px/1 '微软雅黑';
+    border:1px solid #ddd;
+}
+.content .contentmain .right .right3 .shuru2 .user{
+     width:252px;
+     height:30px;
+    background:url(../images/phone.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+}
+.content .contentmain .right .right3 .shuru2 .yzm{
+    width:130px;
+    height:30px;
+    background:url(../images/yzm.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+    margin-right:5px;
+}
+.content .contentmain .right .right3 .shuru2 .huoqu{
+    font-size:14px;
+    color:#999;
+    text-align: center;
+    width:115px;
+    height:34px;
+    background:#fff;
+}
+/* 从记住我开始 */
+.content .contentmain .right .rember {
+    height:14px;
+    font:12px/14px '微软雅黑';
+    margin-bottom:12px;
+}
+.rem{
+    /* width:36px;
+    height:14px; */
+    padding-left:19px;
+     color:#999;
+    background:url(../images/rem2.jpg) no-repeat 0px 0px;
+    cursor:pointer;
+    float:left;
+    margin-right:123px;
+}
+.unrem{
+    width:36px;
+    height:14px;
+    padding-left:19px;
+     color:#999;
+    background:url(../images/rem1.jpg) no-repeat 0px 0px;
+    cursor:pointer;
+    float:left;
+    margin-right:123px;
+}
+ .contentmain .right .rember a,span{
+    float:left;
+    color:#48cfae;
+}
+.content .contentmain .right .login{
+    text-align:center;
+    width:282px;
+    height:36px;
+    border:1px solid #48cfae;
+    background:#48cfae;
+    color:#fff;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.contentmain .right .meet{
+    height:14px;
+    color:#999;
+    font:12px/14px '微软雅黑';
+    margin-bottom:100px;
+}
+.contentmain .right .meet a{
+    float:left;
+    height:15px;
+    font:12px/14px '微软雅黑';
+}
+.contentmain .right .meet .help{
+    color:#999;
+    background:url(../images/help.jpg) no-repeat 0px 0px;
+    padding-left:19px;
+    margin-right:125px;
+}
+.contentmain .right .meet .phone{
+     color:#48cfae;
+}
+/* 其他方式登录 */
+.contentmain .right .right4{
+     width:238px;
+     height:48px;
+     border-top:1px solid #e1e1e1;
+     margin-left:24px;
+     position: relative;
+     margin-bottom:21px;
+}
+.contentmain .right .right4 p{
+    text-align: center;
+     width:82px;
+     background:#fff;
+     color:#999;
+     font:12px/1 '微软雅黑';
+     position: absolute;
+     top:-7px;
+     left:78px;
+}
+.contentmain .right .right4 a{
+    display:block;
+    width:30px;
+    height:30px;
+    float:left;
+    margin-top:18px;
+
+}
+.contentmain .right .right4 .qq{
+    background:url(../images/qq.jpg) no-repeat ;
+    margin-left:54px;
+}
+.contentmain .right .right4 .wb{
+    background:url(../images/wb.jpg) no-repeat ;
+    margin:18px 20px 0 20px;
+}
+.contentmain .right .right4 .wx{
+    background:url(../images/wx.jpg) no-repeat ;
+}
+/* 右侧账号注册 */
+.content .contentmain .regsiter{
+    padding-left:24px;
+    width:308px;
+    background:#fff;
+    padding-top:22px;
+    padding-bottom:18px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,.3);
+    margin:0 auto;
+} 
+.content .contentmain .regsiter1{
+    height:20px;
+    color:#48cfae;
+    font:600 16px "微软雅黑";
+    line-height:20px;
+    padding-bottom:20px;
+}
+.info3 {
+    line-height: 14px;
+    font-size: 14px;
+    color: red;
+    height: 14px;
+  }
+/* 输入框 */
+.content .contentmain .regsiter .regsiter2 .shuru3{
+    height:168px;
+    position: relative;
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 input{
+    height:30px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+    color:#333;
+    font:12px '微软雅黑';
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 .user{
+    width:252px;
+    background:url(../images/phone.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 .psw{
+    width:252px;
+    background:url(../images/psw.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+ 
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 .passLev {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    background-image: url(../images/xuebitu.png);
+    background-repeat: no-repeat;
+    background-position-x: -40px;
+    background-position-y: -70px;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+.content .contentmain .regsiter .regsiter2 .yanzhengma{
+    width:75px;
+    height:32px;
+    border:1px solid #ddd;
+    float:left;
+    margin-right:10px;
+}
+.regsiter .regsiter2 .yanzhengma span{
+    margin:0 1px;
+}
+.regsiter .regsiter2 .yanzhengma span:nth-child(1){
+    display:block;
+    font:20px/32px '微软雅黑';
+    color:pink;
+}
+.regsiter .regsiter2 .yanzhengma span:nth-child(2){
+    display:block;
+    font:18px/32px '微软雅黑';
+    color:blue;
+}
+.regsiter .regsiter2 .yanzhengma span:nth-child(3){
+    display:block;
+    font:24px/32px '微软雅黑';
+    color:red;
+}
+.regsiter .regsiter2 .yanzhengma span:nth-child(4){
+    display:block;
+    font:16px/32px '微软雅黑';
+    color:yellow;
+}
+.content .contentmain .regsiter .regsiter2 .shuaxin{
+    width:30px;
+    height:30px;
+    border:1px solid #ddd;
+    background:url(../images/shuxin1.jpg) no-repeat;
+    float:left;
+}
+.content .contentmain .regsiter .regsiter2 .shuaxin:hover{
+   background:url(../images/shuxin2.jpg) no-repeat;
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 .yzm{
+    width:130px;
+    height:30px;
+    background:url(../images/yzm.jpg) no-repeat 7px 7px;
+    padding-left:30px;
+    margin-right:5px;
+    float:left;
+}
+.content .contentmain .regsiter .regsiter2 .shuru3 .huoqu{
+    font-size:14px;
+    color:#999;
+    text-align: center;
+    width:115px;
+    height:33px;
+    background:#fff;
+    float:left;
+}
+/* 从我同意开始 */
+.content .contentmain .regsiter2 .rember {
+    height:14px;
+    font:12px/14px '微软雅黑';
+    margin-bottom:12px;
+    /* 清除浮动 */
+    clear:both;
+}
+.content .contentmain .regsiter2 .rem11{
+    /* width:36px;
+    height:14px; */
+    padding-left:19px;
+     color:#999;
+    background:url(../images/rem2.jpg) no-repeat 0px 0px;
+    cursor:pointer;
+    float:left;
+}
+.unrem11{
+    width:36px;
+    height:14px;
+    padding-left:19px;
+     color:#999;
+    background:url(../images/rem1.jpg) no-repeat 0px 0px;
+    cursor:pointer;
+    float:left;
+}
+ .contentmain .regsiter2 .rember a{
+    float:left;
+    color:#48cfae;
+}
+.contentmain .regsiter2 .rember .res{
+    margin-left:50px;
+}
+.content .contentmain .regsiter2 .login{
+    display:block;
+    text-align:center;
+    width:284px;
+    height:22px;
+    border:1px solid #48cfae;
+    background:#48cfae;
+    color:#fff;
+    padding-top:14px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.info2{
+    line-height: 14px;
+    font-size: 14px;
+    color: red;
+    height: 14px;
+}
+.contentmain .regsiter2 .meet .help{
+    height:14px;
+    color:#999;
+    font:12px/14px '微软雅黑';
+    background:url(../images/help.jpg) no-repeat 0px 0px;
+    padding-left:19px;
+    margin-right:125px;
+    /* padding-bottom:40px; */
+ 
+}
+.contentmain .regsiter2 .meet div{
+    height:40px;
+}
+/* 其他方式 */
+.contentmain .regsiter .regsiter3{
+    width:238px;
+    height:48px;
+    border-top:1px solid #e1e1e1;
+    margin-left:24px;
+    position: relative;
+    margin-bottom:21px;
+}
+.contentmain .regsiter .regsiter3 p{
+   text-align: center;
+    width:82px;
+    background:#fff;
+    color:#999;
+    font:12px/1 '微软雅黑';
+    position: absolute;
+    top:-7px;
+    left:78px;
+}
+.contentmain .regsiter .regsiter3 a{
+   display:block;
+   width:30px;
+   height:30px;
+   float:left;
+   margin-top:18px;
+
+}
+.contentmain .regsiter .regsiter3 .qq{
+   background:url(../images/qq.jpg) no-repeat ;
+   margin-left:54px;
+}
+.contentmain .regsiter .regsiter3 .wb{
+   background:url(../images/wb.jpg) no-repeat ;
+   margin:18px 20px 0 20px;
+}
+.contentmain .regsiter .regsiter3 .wx{
+   background:url(../images/wx.jpg) no-repeat ;
+}
+/* 底部 */
+.bottom{
+    height:86px;
+}
+.bottom p{
+    text-align: center;
+    font:12px/24px "微软雅黑";
+    color:#999;
+}
+.bottom .bottomp{
+    margin-top:26px;
+}
